@@ -77,10 +77,10 @@ print(result)
 #dictionary
 #fruits = {'apple': 3, 'banana': 2, 'orange': 1}
 #연습문제
-'''
+
 days = {'January': 31, 'February': 28, 'March': 31, 'April': 30, 'May': 31, 'June':30}
 
-'''
+
 month = input("월 입력 : ")
 print(days[month.title()])
 
@@ -201,11 +201,41 @@ multi_func = get_operator('*')
 result2 = multi_func(3,4)
 print(result1)
 print(result2)
-'''
+
 
 def box(n, m):
-    for i in range(n):
-        print('*', end='')
+    for i in range(n):        
         for j in range(m):
-            print('\n')
-box(2, 4)
+            print('*', end='')
+        print('')
+n = int(input())
+m = int(input())
+print(box(n,m))
+
+
+def digit_sum(num):
+    sum = 0
+    for digit in str(num):
+        sum += int(digit)
+    return sum
+print(digit_sum(123))
+
+
+def strfunc(str1, str2):
+
+    if str1 == str2:
+        return -1
+str1 = input()
+str2 = input()
+
+print(strfunc(str1, str2))
+
+
+def math(a,z):
+    for i in range(a, z+1):
+        i+=i
+    return i
+a = int(input(""))
+z = int(input(""))
+print(math(a,z))
+'''
