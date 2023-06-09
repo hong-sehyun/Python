@@ -1,3 +1,17 @@
+class Rectangle:
+    def __init__(self, width, height) :
+        self.width = width
+        self.height = height
+    def area(self):
+        return self.width*self.height
+
+# 인스턴스 생성 시 생성자 메서드 호출
+rectangle1 = Rectangle(3, 4)
+print(rectangle1.width) # 출력 결과: 3
+print(rectangle1.height) # 출력 결과: 4
+
+# 인스턴스 메서드 호출
+print(rectangle1.area()) # 출력 결과: 12
 '''
 
 class Claculator:  #초기화 해줄 필요가 없을 땐 굳이 생성자 만들지 않음
